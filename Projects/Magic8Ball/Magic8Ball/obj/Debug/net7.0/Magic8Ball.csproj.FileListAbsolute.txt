@@ -1,0 +1,15 @@
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\bin\Debug\net7.0\Magic8Ball.exe
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\bin\Debug\net7.0\Magic8Ball.deps.json
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\bin\Debug\net7.0\Magic8Ball.runtimeconfig.json
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\bin\Debug\net7.0\Magic8Ball.dll
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\bin\Debug\net7.0\Magic8Ball.pdb
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\Magic8Ball.csproj.AssemblyReference.cache
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\Magic8Ball.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\Magic8Ball.AssemblyInfoInputs.cache
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\Magic8Ball.AssemblyInfo.cs
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\Magic8Ball.csproj.CoreCompileInputs.cache
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\Magic8Ball.dll
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\refint\Magic8Ball.dll
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\Magic8Ball.pdb
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\Magic8Ball.genruntimeconfig.cache
+C:\Users\daute\source\repos\baileydauterman\Projects\Magic8Ball\Magic8Ball\obj\Debug\net7.0\ref\Magic8Ball.dll
