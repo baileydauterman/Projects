@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "FibonacciSequenceGenerator": {
-      "commandName": "Project",
-      "commandLineArgs": "1000"
-    }
-  }
-}
