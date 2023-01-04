@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Perception.Spatial;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -82,12 +84,13 @@ namespace Calculator
 
         private void button_percent_Click(object sender, RoutedEventArgs e)
         {
-            textBox.Text = (long.Parse(textBox.Text) / 100).ToString();
+            textBox.Text = (double.Parse(textBox.Text) / 100.0).ToString();
         }
 
         private void button_ce_Click(object sender, RoutedEventArgs e)
         {
             textBox.Text = string.Empty;
+            rpn.Clear();
         }
 
         private void button_clear_Click(object sender, RoutedEventArgs e)
@@ -108,9 +111,92 @@ namespace Calculator
             }
         }
 
+        private void button_div_Click(object sender, RoutedEventArgs e)
+        {
+            PushAndClear("/");
+        }
+
+        private void button_multi_Click(object sender, RoutedEventArgs e)
+        {
+            PushAndClear("*");
+        }
+
+        private void button_add_Click(object sender, RoutedEventArgs e)
+        {
+            PushAndClear("+");
+        }
+
+        private void button_sub_Click(object sender, RoutedEventArgs e)
+        {
+            PushAndClear("-");
+        }
+
+        private void button_negate_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBox.Text.StartsWith("-"))
+            {
+                textBox.Text = textBox.Text.Skip(2).ToString();
+                return;
+            }
+
+            textBox.Text = $"-{textBox.Text}";
+        }
+
+        private void button_equal_Click(object sender, RoutedEventArgs e)
+        {
+            if (rpn.Any())
+            {
+                PushAndClear("=");
+            }
+        }
+
         private void TextBoxAdd(string str)
         {
-            textBox.Text = textBox.Text + str;
+            textBox.Text += str;
         }
+
+        private void PushAndClear(string operand)
+        {
+            // Prevents adding multiple operands to the stack
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                return;
+            }
+
+            if (rpn.Any())
+            {
+                var op = rpn.Pop();
+                var num = decimal.Parse(rpn.Pop());
+                decimal current = decimal.Parse(textBox.Text);
+
+                switch (op)
+                {
+                    case "+":
+                        textBox.Text = (num + current).ToString();
+                        break;
+
+                    case "-":
+                        textBox.Text = (num - current).ToString();
+                        break;
+
+                    case "*":
+                        textBox.Text = (num * current).ToString();
+                        break;
+
+                    case "/":
+                        textBox.Text = (num / current).ToString();
+                        break;
+                }
+
+                return;
+            }
+
+            rpn.Push(textBox.Text);
+            rpn.Push(operand);
+
+            textBox.Text = string.Empty;
+        }
+
+        private Stack<string> rpn = new Stack<string>();
     }
 }
