@@ -2,16 +2,16 @@
 A bunch of projects used to test programming knowledge
 
 * Beginner
-    * Text Based Game
-    * Magic 8 Ball 
-    * Key Logger
-    * Fibonacci Sequence Generator 
-    * Vowel Counter (Count the vowels in a string)
-    * Word Counter (Count the words in a string)
-    * Check if Palindrome (Word can be spelled the backwards and forwards Example: Racecar, Kayak)
-    * Hangman Game
+    * :x: Text Based Game
+    * :white_check_mark: Magic 8 Ball 
+    * :x: Key Logger
+    * :white_check_mark: Fibonacci Sequence Generator 
+    * :white_check_mark: Vowel Counter (Count the vowels in a string)
+    * :white_check_mark: Word Counter (Count the words in a string)
+    * :white_check_mark: Check if Palindrome (Word can be spelled the backwards and forwards Example: Racecar, Kayak)
+    * :white_check_mark: Hangman Game
 * Intermediate
-    * Calculator
+    * :white_check_mark: Calculator
     * Reverse a String (Input: Programming, Output: gnimmargorP)
     * Black Jack (Game)
     * Conway's Game of Life (Sim)
